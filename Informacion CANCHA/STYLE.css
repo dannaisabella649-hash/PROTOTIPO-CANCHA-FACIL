@@ -1,0 +1,247 @@
+
+* { 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: #03045e;
+}
+
+/* FUENTES */
+@font-face {
+    font-family: titulo;
+    src: url("PROYECTO/FUENTES/AnekKannada-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url("PROYECTO/FUENTES/Roboto-Medium.ttf");
+}
+
+h1, h2, h3 { font-family: titulo; }
+p { font-family: parrafo; }
+
+/* ENCABEZADO */
+header {
+    background-color: #89D31A ;
+    width: 100%;
+}
+
+header .container { 
+    display: flex; 
+    flex-direction: row; /* Elementos alineados horizontalmente */
+    justify-content: space-between; /* Logo a un lado, menú al otro */
+    align-items: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 10px 20px;
+}
+
+header img {
+    width: 10vh; /*tamaño logo*/
+    padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* NAVEGACIÓN */
+header nav {
+    display: flex; 
+    gap: 15px;
+}
+header nav a {
+    transition: all 0.3s ease; /* Hace que el cambio no sea brusco */
+}
+
+header a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #000000;
+}
+header nav a:hover {
+    color: #535353;         
+    transform: translateY(-3px) scale(1.1); /* Sube un poco y crece */
+}
+
+/* SECCIÓN PRINCIPAL (HERO) */
+#hero {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;
+    height: 48vh; 
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("imagenes/categoria1.jpeg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    margin-bottom: 40px; /* Separación para que no pegue con las tarjetas */
+}
+/*boton imagen*/
+#hero button {
+    margin-top: 20px; /* lo separa del texto */
+    background-color: #89D31A;
+    color: white;
+    padding: 10px 25px; /* Tamaño del botón */
+    border: none;        
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background 0.3s; /* Animación suave de color */
+    display: flex;/* Centrado de texto */
+    justify-content: center;
+    align-items: center;
+}
+/* Efecto al pasar el mouse */
+#hero button:hover {
+    background-color: #1A0315; 
+}
+
+/* CONTENEDOR DE TARJETAS */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ESTILO DE TARJETAS */
+.card {
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+/* BOTONES */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;      /* Empuja los botones hacia el fondo de la tarjeta */
+    justify-content: flex-end; /* Los mueve hacia la derecha (lado opuesto a la imagen) */
+}
+
+.buttons button {
+    flex: none;
+    
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #89D31A;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* Centrar texto dentro del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button:hover {
+    background-color: #1A0315;
+}
+
+
+
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #89D31A;
+}
+/*Cambios grupo 1 del pie de página*/
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /*define las columnas d eun contenedor de cuadrícula*/
+    grid-gap:50px; /*ancho que separa las rejillas de la columna*/
+    padding: 45px 0px;
+}
+/*Cambios en el contenedor figura de la caja del pie de página*/
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Cambios en la imagen del contenedor figura*/
+.pie-pagina .grupo-1 .box figure img{
+    width: 30%;
+}
+
+/*Cambios en el título de la caja*/
+.pie-pagina .grupo-1 .box h2{
+    color: #000000;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/*Cambios en el párrafo de la caja*/
+.pie-pagina .grupo-1 .box p{
+    color: #000000;
+    margin-bottom: 10px;
+}
+/*Cambios en los enlcaes de las redes sociales*/
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px; /*separación enrte líneas de texto*/
+    color: #000000;
+    margin-right: 10px;
+    background-color:  #76b418;
+    text-align: center;
+    transition: all 300ms ease;
+}
+/*Cambios en el efecto hover de los enlcaes de las redes sociales*/
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #ffffff;
+}
+/*Cambios en el grupo 2 del pié de página*/
+.pie-pagina .grupo-2{
+    background-color: #535353;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;
+}
+/*Cambios en el texto del grupo 2 del pié de página*/
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    .card {
+        flex-direction: column;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+}
