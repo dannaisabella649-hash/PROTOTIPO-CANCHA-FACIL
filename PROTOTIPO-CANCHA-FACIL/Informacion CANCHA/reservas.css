@@ -1,0 +1,209 @@
+body {
+    background-color: #03045e;
+    margin: 0%;
+}
+
+.barra{
+  background-color: #b8fb3c; 
+  position: relative;
+  display: flex;    
+  padding: 10px 20px;
+  height: 70px;
+
+}
+
+.logo {
+  height: 100px; 
+  width: 100px;
+  position: relative;
+  top: 0%;
+    right: 340px;
+}
+
+.reser{
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 490px ;
+    color: black;
+}
+.titulo{
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 0px ;
+    color: #fff;
+}
+
+.btn{
+    background: #b8fb3c;
+    color:black;
+    border: 2px solid black;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    top: 0%;
+    left: 450px;
+    margin: 5px;
+
+}
+
+.btn:hover{
+    box-shadow: 0 0 40px #5a1e69;
+    background-color: #03045e;
+}
+
+
+
+.cancha {
+    text-align: center;
+}
+.taxto1{
+    color:#b8fb3c ;
+    font-size: 20px;
+}
+
+.cancha1 {
+    display: block;
+    margin: 30px auto;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cancha p {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.cancha2, .cancha3, .cancha4 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0; 
+}
+
+.container2 {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+.card__container {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+}
+.card__article {
+    position: relative;
+    /* --- REDONDEAR ESQUINAS DEL CONTENEDOR --- */
+    border-radius: 1.5rem; /* Elige el tamaño del redondeo (ej. 15px, 1.5rem, etc.) */
+    
+    /* --- IMPORTANTE: OCULTA LO QUE SE SALGA DE LAS ESQUINAS --- */
+    overflow: hidden; 
+    
+    /* Mantenemos tu ancho y flex original */
+    width: 100%; /* Si estás usando Flexbox */
+    max-width: 350px; /* Si tienes un ancho máximo */
+    box-sizing: border-box;
+}
+
+.card__data {
+    width: 100%; 
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    
+    background-color: #d5dba9;
+    padding: 1rem; 
+    position: absolute;
+    
+    bottom: -100%; 
+    opacity: 0;
+    transition: all 0.5s ease;
+    
+
+    text-align: center;
+    font-family: sans-serif;
+}
+.card__article:hover .card__data {
+    opacity: 1;
+    bottom: 0; 
+}
+
+.card__description, .card__title {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.card__article:hover .card__data {
+    opacity: 1;
+    bottom: 0; 
+}
+
+/* Animaciones */
+@keyframes show-data {
+    50% { transform: translateY(-10rem); }
+    100% { transform: translateY(-7rem); }
+}
+
+@keyframes remove-data {
+    0% { transform: translateY(-7rem); }
+    50% { transform: translateY(-10rem); }
+    100% { transform: translateY(.5rem); }
+}   
+/* --- BOTONES DE RESERVA --- */
+.btn2 {
+    background: #b8fb3c;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+
+
+}
+.btn2:hover{
+    box-shadow: 0 0 40px #03045e;
+    background-color: #03045e;
+}
+
+.barra2{
+  background-color: #b8fb3c; 
+  position: relative;
+  display: flex;    
+  padding: 10px 50px;
+  height: 190px;
+}
+
+.minilogo {
+  height: 190px;
+  width: 190px; 
+
+
+}
+.can{
+    position: relative;
+    top: 0%;
+    left: 830px;
+}
+
+.mini2{
+    width: 50px;
+    position: relative;
+    top: 130px;
+    left: 600px
+}
+
+
