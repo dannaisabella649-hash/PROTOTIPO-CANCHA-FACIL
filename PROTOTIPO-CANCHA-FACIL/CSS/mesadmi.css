@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #03045e; /* Fondo verde oscuro de la base */
+}
+
+/* HEADER */
+.barra-verde {
+    background-color:  #b8fb3c;  /* Verde brillante del encabezado */
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo-admin {
+    height: 90px;
+}
+
+.btn-inicio-negro {
+    background-color:  #abe938; 
+    color: #000000; 
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+.lista-reservas {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* TARJETAS GRISES */
+.tarjeta-gris {
+    background-color: #C0C0C0; /* Gris exacto del prototipo */
+    padding: 30px 40px;
+    color: white;
+}
+
+.cliente {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.info {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* PANEL LATERAL */
+.panel-lateral {
+    flex: 1;
+    background-color: #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    border-left: 2px solid #22C55E;
+}
+
+.label-button {
+    color: #888;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.btn-ver-ingresos {
+    background-color: black;
+    color: #22C55E;
+    text-decoration: none;
+    padding: 20px;
+    width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}

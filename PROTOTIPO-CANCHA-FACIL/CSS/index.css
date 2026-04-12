@@ -1,0 +1,49 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    background-color: #62ff00;
+    display: flex;
+    height: 100px;
+}
+
+header .head { 
+    display: flex; 
+    flex-direction: row; /* Elementos alineados horizontalmente */
+    justify-content: space-between; /* Logo a un lado, menú al otro */
+    align-items: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex; 
+    gap: 15px;
+}
+
+body {
+    background-image: url(../imagenes/fondo-form.jpg); 
+    background-size: cover; 
+    text-align: center;
+    margin: 0; 
+}
+
+.contenido{
+    padding: 35vh;
+    background: linear-gradient(#03055ea8);
+}
+
+
+
+a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #62ff00;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
